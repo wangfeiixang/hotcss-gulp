@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="apple-mobile-web-app-title" content="Ratchet">
+	    <title>创世+ 分享</title>
+	    <link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/share.css">
+		<script src="../js/hotcss.js"></script>
+		<!-- <script src="../js/base.js"></script> -->
+		
+		
+	</head>
+	<body>
+		<div class="content">
+			<div class="contentTxt">
+				<div>
+					<p>您的朋友<span id="userId"></span>正在玩「创世+」</p>
+					<p>TA的推荐码：<span  id="referralCode"></span></p>
+				</div>
+				<p>(下载应用后要填写推荐码才可以完成注册哦~)</p>
+			</div>
+			<div class="invitationCode">
+				<div>
+					<p>宇宙浩瀚，茫茫星海</p>
+					<p>这里有颗星球等你开疆扩土</p>
+					<p>创建自己的海岛，拥有自己的子民</p>
+					<p>你将带领他们打造属于你的世界</p>
+					<p>领取珍珠贝，提其为现</p>
+					<p>邀请好友越多，收益越多</p>
+					<p>赶快来体验吧</p>
+				</div>
+				<div class="contentBtn" id="button">
+					<p>
+						<a href="javascript:void(0);" title="Android下载" data-src="http://f.appstore.zshiliu.com/zslapp/appstore-release-v1.0_31001.apk"  class="androidlink">
+							<img src="../imgs/sharebtn.png" alt="" />Android下载
+						</a>
+					</p>
+	                <p>
+	                	<a href="javascript:void(0);" title="iPhone下载" data-src="http://f.appstore.zshiliu.com/zslapp/appstore-release-v1.0_31001.apk" class="ioslink">
+	                		<img src="../imgs/sharebtn.png" alt="" />iPhone下载
+	                	</a>
+	                </p>
+				</div>
+			</div>
+			
+			<!--微信提示浮层-->
+            <div class="share_bg j_share_bg" style="display:none;position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; animation: opacityIn 1s ease 0.2s both; z-index: 9998; background: rgba(0, 0, 0, 0.6);">
+                <p class="share_icon" style="clear:both; padding:10px; text-align:right;height:100%;background-position: right top; -webkit-animation:rotateUp 1s .8s ease both;z-index:9999;">
+                    <img id="j_float_nav" src="../imgs/weChat.png" alt="" width="100%"/>
+                </p >
+            </div>
+		</div>
+	</body>
+	<script src="../js/share.js"></script>
+</html>

@@ -1,0 +1,78 @@
+/*创世+分享-- css*/
+
+@import 'px2rem.scss';
+$designWidth: 360; //px2rem(685)
+
+html,body{
+	width: 100%;
+	overflow: hidden;
+	font-family: 'PingFangSC','SimHei';
+}
+.content {
+    width:px2rem(360);
+    height: px2rem(640);
+    position: relative;
+    background: url('../imgs/sharebg.png') no-repeat top center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+/*分享内容*/
+.content > .contentTxt {
+	width: 100%;
+	height:px2rem(63);
+	line-height:px2rem(30);
+	position: absolute;
+	top:px2rem(148);
+	left:px2rem(8);
+	color: #066D9E;
+	font-size:px2rem(18);
+	text-align: center;
+	font-weight: bold;
+}
+.content > .contentTxt > div {
+	margin:px2rem(7) px2rem(16);
+}
+.content > .contentTxt > div  > p > span {
+	display: inline-block;
+	vertical-align: top;
+}
+.content > .contentTxt > p{
+	color:#FFFFFF;
+	font-size:px2rem(13);
+	margin-top:px2rem(40);
+	font-weight: 100;
+	
+}
+/*推荐内容*/
+.content > .invitationCode {
+	width: 90%;
+	background:rgba(255,255,255,0.9);
+	border-radius: 15px;
+	position: absolute;
+	top:px2rem(310);
+	left:px2rem(18);
+	color: #3AA0D5;
+	font-size:px2rem(14);
+	text-align: center;
+}
+.content > .invitationCode > div {
+	margin:px2rem(40) px2rem(50);
+	
+}
+.content > .invitationCode > div >  p{
+	line-height:px2rem(25);
+}
+.content > .invitationCode > div >  p > span{
+	display: inline-block;
+	vertical-align: top;
+}
+/*按钮*/
+.content > .invitationCode >.contentBtn {
+	display: flex;
+}
+.content > .invitationCode >.contentBtn > p{
+	flex:1;
+}
+.content > .invitationCode > .contentBtn > p > a > img{
+	width:px2rem(100);
+}
